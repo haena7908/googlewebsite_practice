@@ -1,0 +1,234 @@
+<html lang="ko">
+  <head>
+    <title>바닐라코딩</title>
+    <style>
+      body {
+        text-align: right;
+      }
+
+      a {
+        margin: 10px;
+        font-size: 14px;
+        color: black; /* 링크 기본 색상 */
+        text-decoration: none; /* 링크 밑줄 제거 */
+        display: inline-block;
+      }
+
+      .Sign-in {
+        background-color: #0313f7;
+        color: white;
+        padding: 9px 23px;
+        border-radius: 4px;
+      }
+
+      header {
+        display: flex; /* Flexbox 레이아웃 사용 */
+        justify-content: flex-end; /* 항목들을 오른쪽으로 정렬 */
+        align-items: center; /* 항목들을 세로축의 중앙에 정렬 */
+      }
+
+      header img {
+        width: 10px;
+        padding: 10px;
+        display: inline-block;
+      }
+
+      .logo-box {
+        text-align: center;
+        margin-top: 250px;
+      }
+
+      .logo-box img {
+        width: 200px;
+      }
+
+      input {
+        border-radius: 100px;
+        border: 1px solid rgb(211, 206, 206);
+        width: 350px;
+        height: 30px;
+      }
+
+      .input {
+        position: relative;
+        display: inline-block;
+      }
+
+      .input img {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        left: 10px;
+        margin-top: 10px;
+      }
+
+      .input-box {
+        text-align: center;
+        margin-top: 8px;
+      }
+
+      .search {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 5px;
+      }
+
+      .button {
+        background-color: rgb(211, 211, 211);
+        border-radius: 3px;
+        color: rgb(73, 73, 73);
+        padding: 8px;
+      }
+
+      .info {
+        display: flex;
+        justify-content: center;
+      }
+
+      .text {
+        font-size: 10px;
+      }
+
+      .color {
+        color: blue;
+      }
+
+      .bottom-box {
+        border-bottom: 1px solid rgb(214, 210, 210);
+        padding: 4px 4px;
+        background-color: rgb(239, 239, 238);
+        display: flex;
+        position: fixed;
+        bottom: 48px;
+        left: 0px;
+        width: 100%;
+      }
+
+      .country {
+        color: black;
+        font-weight: bold;
+        left: 5px;
+        font-size: 13px;
+      }
+
+      .menu {
+        display: flex;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgb(239, 239, 238);
+        width: 100%;
+        font-weight: bold;
+        padding: 6px 6px;
+        font-size: 13px;
+      }
+
+      .link1,
+      .link2,
+      .link3,
+      .link4 {
+        font-size: 13px;
+      }
+
+      a:hover {
+        color: black;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: black;
+        text-decoration: underline;
+      }
+
+      .menu2 {
+        display: flex;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        background-color: rgb(239, 239, 238);
+        font-weight: bold;
+        padding: 6px 6px;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a>Gmail</a><a>Images</a><img src="./icon/dot.png" alt="메뉴" /><a
+        class="Sign-in"
+        >Sign in</a
+      >
+    </header>
+    <div class="logo-box">
+      <img id="logo" src="./icon/logo.jpg" />
+    </div>
+
+    <div class="input-box">
+      <div class="input">
+        <input type="text" />
+        <img src="./icon/glass.png" alt="돋보기" />
+      </div>
+    </div>
+
+    <div class="search">
+      <a class="button">Google Search</a>
+      <a class="button">I'm lucky</a>
+    </div>
+
+    <div class="info">
+      <a class="text">Google offered in: <span class="color">한국어</span></a>
+    </div>
+
+    <footer>
+      <div class="bottom-box">
+        <a class="country">South korea</a>
+      </div>
+
+      <div class="menu">
+        <a
+          class="link1"
+          href="https://about.google/?utm_source=google-KR&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+          target="_self"
+          >About</a
+        >
+        <a
+          class="link2"
+          href="https://ads.google.com/intl/ko_kr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+          target="_self"
+          >Advertising</a
+        >
+        <a
+          class="link3"
+          href="https://ads.google.com/intl/ko_kr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+          target="_self"
+          >Business</a
+        >
+        <a
+          class="link4"
+          href="https://www.google.com/search/howsearchworks/?fg=1"
+          target="_self"
+          >How Search works</a
+        >
+      </div>
+
+      <div class="menu2">
+        <a
+          class="link5"
+          href="https://policies.google.com/privacy?hl=ko&fg=1"
+          targer="_self"
+          >Privacy</a
+        >
+
+        <a
+          class="link6"
+          href="https://policies.google.com/terms?hl=ko&fg=1"
+          targer="_self"
+          >Tems</a
+        >
+
+        <a class="link7">Settings</a>
+      </div>
+    </footer>
+  </body>
+</html>
